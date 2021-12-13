@@ -8,5 +8,9 @@ namespace Home_Work_11
 {
     class Employee : Worker
     {
+        public Employee(string firstName, string surname, int id, byte age) : base(firstName, surname, id, age)
+        {
+
+        }
     }
 }

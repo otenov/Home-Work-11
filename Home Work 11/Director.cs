@@ -8,6 +8,9 @@ namespace Home_Work_11
 {
     class Director : Worker
     {
+        public Director(string firstName, string surname, int id, byte age) : base(firstName, surname, id, age)
+        {
 
+        }
     }
 }
