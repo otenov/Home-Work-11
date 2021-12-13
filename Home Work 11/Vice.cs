@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Home_Work_11
 {
-    class Vice : Worker
+    class Vice : Chief
     {
         public Vice(string firstName, string surname, int id, byte age) : base(firstName, surname, id, age)
         {

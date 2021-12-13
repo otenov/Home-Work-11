@@ -10,7 +10,13 @@ namespace Home_Work_11
     {
         public Intern(string firstName, string surname, int id, byte age) : base(firstName, surname, id, age)
         {
+            base.Salary = 500;
+        }
 
+        public void SetSalary()
+        {
+            base.Salary = 700;
         }
     }
 }
+

@@ -25,13 +25,16 @@ namespace Home_Work_11
 
         public int Salary { get; set; }
 
+        public int DepId { get; set; }
+
         public Worker(string firstName, string surname, int id, byte age)
         {
             this.FirstName = firstName;
             this.Surname = surname;
             this.Id = allId;
             allId++;
-            this.Age = age; 
+            this.Age = age;
+            DepId = 0;
         }
 
     }
