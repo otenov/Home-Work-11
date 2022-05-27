@@ -16,7 +16,7 @@ namespace Home_Work_11
 
         public Department myDepartment;
 
-        public int SetSalary()
+        public virtual int SetSalary()
         {
             double assumedSalary = 0;
             for (int i = 0; i <= myDepartment.workers.Count-1;i++)

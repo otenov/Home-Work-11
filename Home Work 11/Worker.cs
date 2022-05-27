@@ -35,6 +35,7 @@ namespace Home_Work_11
             allId++;
             this.Age = age;
             DepId = 0;
+            this.Salary = default;
         }
 
     }

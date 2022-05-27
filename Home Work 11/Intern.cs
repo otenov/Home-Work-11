@@ -13,9 +13,9 @@ namespace Home_Work_11
             base.Salary = 500;
         }
 
-        public void SetSalary()
+        public void SetSalary(int salary)
         {
-            base.Salary = 700;
+            base.Salary = salary;
         }
     }
 }

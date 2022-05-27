@@ -83,7 +83,7 @@ namespace Home_Work_11
             depNames.Add(Name);
         }
 
-        public void Appoint(Chief ch)
+        public virtual void Appoint(Chief ch)
         {
             if (ch.myDepartment == null)
             {

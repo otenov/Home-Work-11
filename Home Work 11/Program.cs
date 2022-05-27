@@ -10,7 +10,8 @@ namespace Home_Work_11
     {
         static void Main(string[] args)
         {
-
+            Chief ch = new Head("","",0,1);
+            Head hd = new Chief("", "", 0, 1) as Head;
         }
     }
 }

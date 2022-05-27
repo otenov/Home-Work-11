@@ -8,15 +8,16 @@ namespace Home_Work_11
 {
     class Employee : Worker
     {
-        const int rate = 15;
-        public Employee(string firstName, string surname, int id, byte age, int hour) : base(firstName, surname, id, age)
+        public int Rate { get; set; }
+        public Employee(string firstName, string surname, int id, byte age, int rate) : base(firstName, surname, id, age)
         {
-            base.Salary = rate * hour;
+            this.Rate = rate;
         }
 
-        public void SetSalary(int hour)
+        public int SetSalary(int hour)
         {
-            base.Salary = rate * hour;
+            base.Salary = Rate * hour;
+            return base.Salary;
         }
     }
 }

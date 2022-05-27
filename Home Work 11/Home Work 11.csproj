@@ -47,6 +47,8 @@
     <Compile Include="Department.cs" />
     <Compile Include="Director.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Head.cs" />
+    <Compile Include="Institution.cs" />
     <Compile Include="Intern.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
