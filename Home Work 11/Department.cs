@@ -28,6 +28,8 @@ namespace Home_Work_11
 
         public Chief chief;
 
+        public int InstId { get; set; }
+
         public Department(string name)
         {
             for(; ; )
@@ -40,6 +42,7 @@ namespace Home_Work_11
             allId++;
             workers = new List<Worker>();
             DateOfCreation = DateTime.Now;
+            InstId = 0;
         }
 
         public string Checked()
@@ -92,5 +95,16 @@ namespace Home_Work_11
             }
             else return;
         }
+
+        public virtual int CalculateSalary()
+        {
+            double assumedSalary = 0;
+            for (int i = 0; i <= workers.Count - 1; i++)
+            {
+                assumedSalary = assumedSalary + 0.15 * workers[i].Salary;
+            }
+            return Convert.ToInt32(assumedSalary);
+        }
+
     }
 }

@@ -14,10 +14,9 @@ namespace Home_Work_11
             this.Rate = rate;
         }
 
-        public int SetSalary(int hour)
+        public void SetSalary(int hour)
         {
             base.Salary = Rate * hour;
-            return base.Salary;
         }
     }
 }

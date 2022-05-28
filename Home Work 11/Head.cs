@@ -8,17 +8,19 @@ namespace Home_Work_11
 {
     class Head : Chief
     {
-        //Department  myDepartment;
 
         public Head(string firstName, string surname, int id, byte age): base(firstName, surname, id, age)
         {
-            
+            myInstitution = null;
         }
 
-        public override int SetSalary()
-        {
+        public Institution myInstitution;
 
-            return base.SetSalary();
+        public override void SetSalary()
+        {
+            int conteiner = myInstitution.CalculateSalary();
+            if (conteiner < 1300) Salary = 1300;
+            else Salary = conteiner;
         }
 
 

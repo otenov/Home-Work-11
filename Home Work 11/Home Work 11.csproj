@@ -50,6 +50,7 @@
     <Compile Include="Head.cs" />
     <Compile Include="Institution.cs" />
     <Compile Include="Intern.cs" />
+    <Compile Include="Organosation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vice.cs" />
