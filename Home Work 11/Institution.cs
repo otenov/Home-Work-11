@@ -11,11 +11,14 @@ namespace Home_Work_11
         public Institution(string name) : base(name)
         {
             departments = new List<Department>();
+            OrgId = 0;
         }
 
         public Head head;
 
         public List<Department> departments;
+
+        public int OrgId { get; set; }
 
         public override void Appoint(Chief ch)
         {
